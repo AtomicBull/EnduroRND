@@ -1,0 +1,501 @@
+@charset "UTF-8";
+/* Задаём общие свойства для всего документа*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font: 24px "Roboto Condensed", sans-serif;
+  color: black;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.container {
+  width: 1280px;
+  margin: 0 auto;
+}
+
+.titles {
+  text-align: center;
+  padding-top: 55px;
+  padding-bottom: 50px;
+}
+
+.titles h2 {
+  font-size: 40px;
+  color: black;
+}
+
+/*header*/
+header {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.nav-inner {
+  display: flex;
+  height: 90px;
+  align-items: center;
+}
+
+.menu {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.menu-item {
+  display: flex;
+  list-style: none;
+  margin-right: 60px;
+}
+
+.menu-item li {
+  margin-left: 30px;
+}
+
+.socials {
+  display: flex;
+  list-style: none;
+  margin-right: 20px;
+}
+
+.socials li {
+  margin-left: 9px;
+}
+
+/*promo*/
+.promo {
+  background: url(../Img/promo_background.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.promo-inner {
+  min-height: calc(100vh - 74px);
+}
+
+h1 {
+  color: white;
+  font-size: 40px;
+  font-weight: 400;
+  text-align: center;
+  padding-top: 15px;
+}
+
+h2 {
+  color: white;
+  font-size: 28px;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.promo_panel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 500px;
+  height: 300px;
+  border-radius: 30px;
+  background-color: rgba(217, 217, 217, 0.35);
+  padding-top: 17px;
+  margin-top: 135px;
+  margin-left: 102px;
+}
+
+.promo_panel p {
+  color: white;
+}
+
+.promo_button {
+  width: 500px;
+  height: 60px;
+  margin-left: 102px;
+  margin-top: 80px;
+  border-radius: 30px;
+  font-size: 24px;
+  color: black;
+  background-color: #fcb414;
+  border: none;
+}
+.promo_button:hover {
+  color: white;
+  background-color: #464440;
+  transition: 0.5s;
+}
+
+/*motopark*/
+.motopark {
+  background: url(../Img/Background_all.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.motopark-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.motopark_panel {
+  display: flex;
+  align-items: center;
+  height: 270px;
+  width: 1200px;
+  border-radius: 30px;
+  background-color: rgba(255, 255, 255, 0.4588235294);
+  margin-bottom: 30px;
+}
+
+.motopark_panel_img {
+  height: 270px;
+  width: 440px;
+  margin-left: 30px;
+}
+
+.motopark_panel_text {
+  width: 250px;
+}
+
+.motopark_panel_text p {
+  font-size: 18px;
+}
+
+.motopark_panel_text h3 {
+  font-size: 32px;
+  padding-bottom: 10px;
+}
+
+.motopark_panel_text h4 {
+  font-size: 24px;
+  padding-bottom: 10px;
+}
+
+.motopark_buttons {
+  height: 100%;
+  display: flex;
+  margin-right: 30px;
+  align-items: flex-end;
+}
+
+.motopark_buttons :last-child {
+  margin-right: 0;
+}
+
+.motopark_panel_button {
+  height: 60px;
+  width: 220px;
+  font-family: "PT Sans", sans-serif;
+  font-size: 20px;
+  margin-right: 20px;
+  margin-bottom: 30px;
+  color: black;
+  background-color: #fcb414;
+  border: none;
+}
+.motopark_panel_button:hover {
+  color: white;
+  background-color: #464440;
+  transition: 0.5s;
+}
+
+/*RentForm*/
+.RentForm {
+  background: url(../Img/Background_all.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.RentForm-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.Form {
+  margin-top: 100px;
+}
+
+.RentForm_input {
+  background-color: #464440;
+  height: 45px;
+  width: 500px;
+  margin-top: 18px;
+  text-align: center;
+  border: none;
+}
+
+/* Устанавливаем исчезающий текст в центре */
+::-webkit-input-placeholder {
+  text-align: center;
+}
+
+:-moz-placeholder {
+  /* Firefox 18- */
+  text-align: center;
+}
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  text-align: center;
+}
+
+:-ms-input-placeholder {
+  text-align: center;
+}
+
+.RentForm_button {
+  height: 45px;
+  width: 500px;
+  font-size: 24px;
+  border-radius: 30px;
+  margin-top: 18px;
+  color: black;
+  background-color: #fcb414;
+  border: none;
+}
+.RentForm_button:hover {
+  color: white;
+  background-color: #464440;
+  transition: 0.5s;
+}
+
+.Terms {
+  background: url(../Img/Background_all.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.Terms-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.Terms_panel {
+  display: flex;
+  height: 270px;
+  color: white;
+  background-color: #464440;
+  border-radius: 30px;
+  margin-top: 40px;
+  align-items: center;
+}
+
+.Terms_text {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  margin-left: 10px;
+}
+
+.Terms_img img {
+  height: 245px;
+  width: 445px;
+  border-radius: 30px;
+  margin-right: 10px;
+}
+
+.Terms_button {
+  height: 45px;
+  width: 500px;
+  font-size: 24px;
+  border-radius: 30px;
+  margin-top: 90px;
+  color: black;
+  background-color: #fcb414;
+  border: none;
+}
+.Terms_button:hover {
+  color: white;
+  background-color: #464440;
+  transition: 0.5s;
+}
+
+.Certificate {
+  background: url(../Img/Background_all.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.card img {
+  height: 400px;
+  width: 500px;
+}
+
+.Certificate-inner {
+  display: flex;
+  margin-top: 140px;
+}
+
+.Certificate_Form {
+  display: flex;
+  flex-direction: column;
+  margin-left: 65px;
+  height: 400px;
+}
+
+.Certificate_text {
+  font-size: 18px;
+  width: 500px;
+}
+
+.CertificateForm_input {
+  background-color: #464440;
+  height: 45px;
+  width: 500px;
+  margin-top: 20px;
+  text-align: center;
+  border: none;
+}
+
+.CertificateForm_button {
+  height: 45px;
+  width: 500px;
+  font-size: 24px;
+  border-radius: 30px;
+  margin-top: 20px;
+  color: black;
+  background-color: #fcb414;
+  border: none;
+}
+.CertificateForm_button:hover {
+  color: white;
+  background-color: #464440;
+  transition: 0.5s;
+}
+
+.FAQ {
+  background: url(../Img/Background_all.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.FAQ-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.FAQ-block {
+  width: 500px;
+}
+
+details {
+  padding-bottom: 10px;
+  border-radius: 7px;
+  margin-top: 20px;
+  font-size: 28px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+details summary {
+  outline: none;
+}
+
+.FAQ-block_text {
+  padding-top: 20px;
+}
+
+.Contacts {
+  background: url(../Img/Background_all.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.Contacts-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.Contacts_panel {
+  display: flex;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.Contacts_text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 600px;
+}
+
+.Contacts_text p {
+  margin-top: 15px;
+}
+
+#Contacts_text_smaller_p {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.Contacts_text h4 {
+  color: #fcb414;
+  font-weight: normal;
+  margin-top: 20px;
+}
+
+.Contacts_socials {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  letter-spacing: 14px;
+}
+
+.Contacts_socials_item {
+  color: #fcb414;
+}
+
+.map {
+  height: 410px;
+  width: 740px;
+  border-radius: 30px;
+  border: solid 1px #fcb414;
+}
+
+/* footer */
+.footer {
+  padding: 40px 0;
+  background: black;
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer ul {
+  list-style: none;
+}
+
+.footer li {
+  margin-bottom: 10px;
+}
+
+.footer a {
+  text-decoration: none;
+  color: white;
+  font-weight: normal;
+  font-size: 18px;
+  font-style: normal;
+}
+
+.footer-copy {
+  padding: 30px 0 0 0;
+}
+
+.footer-copy a {
+  color: white;
+  font-size: 14px;
+}
+
+.footer-copy a:last-child {
+  padding-left: 10px;
+}/*# sourceMappingURL=Style.css.map */

@@ -1,0 +1,427 @@
+// Обозначаем цвета
+$main_color1: #fcb414;
+$main_color2: white;
+$main_color3: black;
+$main_color4: #464440;
+// Миксины на свойство наведения на кнопку
+// чтобы включить его в блок нужно записать @include Button_hover;
+// Где Button_hover - название миксина.
+// В данном миксине мы записываем одинаковые для всех кнопак свойства типо цвета и тд, а так же анимацию при наведении
+@mixin Button_hover {
+  color: $main_color3;
+  background-color: $main_color1;
+  border: none;
+  &:hover {
+    color: $main_color2;
+    background-color: $main_color4;
+    transition: 0.5s;
+  }
+}
+
+/* Задаём общие свойства для всего документа*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font: 24px "Roboto Condensed", sans-serif;
+  color: $main_color3;
+}
+a {
+  text-decoration: none;
+  color: $main_color2;
+}
+// container для определения ширины контента
+.container {
+  width: 1280px;
+  margin: 0 auto;
+}
+// titles - используется для загаловков
+.titles {
+  text-align: center;
+  padding-top: 55px;
+  padding-bottom: 50px;
+}
+.titles h2 {
+  font-size: 40px;
+  color: $main_color3;
+}
+/*header*/
+header {
+  background-color: #00000099;
+}
+.nav-inner {
+  display: flex;
+  height: 90px;
+  align-items: center;
+}
+.menu {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.menu-item {
+  display: flex;
+  list-style: none;
+  margin-right: 60px;
+}
+.menu-item li {
+  margin-left: 30px;
+}
+.socials {
+  display: flex;
+  list-style: none;
+  margin-right: 20px;
+}
+.socials li {
+  margin-left: 9px;
+}
+/*promo*/
+.promo {
+  background: url(../Img/promo_background.jpg) no-repeat center;
+  background-size: cover;
+}
+.promo-inner {
+  min-height: calc(100vh - 74px);
+}
+h1 {
+  color: $main_color2;
+  font-size: 40px;
+  font-weight: 400;
+  text-align: center;
+  padding-top: 15px;
+}
+h2 {
+  color: $main_color2;
+  font-size: 28px;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 10px;
+}
+.promo_panel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 500px;
+  height: 300px;
+  border-radius: 30px;
+  background-color: rgba(217, 217, 217, 0.35);
+  padding-top: 17px;
+  margin-top: 135px;
+  margin-left: 102px;
+}
+.promo_panel p {
+  color: $main_color2;
+}
+.promo_button {
+  width: 500px;
+  height: 60px;
+  margin-left: 102px;
+  margin-top: 80px;
+  border-radius: 30px;
+  font-size: 24px;
+  @include Button_hover;
+}
+/*motopark*/
+.motopark {
+  background: url(../Img/Background_all.jpg) no-repeat center;
+  background-size: cover;
+}
+.motopark-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.motopark_panel {
+  display: flex;
+  align-items: center;
+  height: 270px;
+  width: 1200px;
+  border-radius: 30px;
+  background-color: #ffffff75;
+  margin-bottom: 30px;
+}
+.motopark_panel_img {
+  height: 270px;
+  width: 440px;
+  margin-left: 30px;
+}
+.motopark_panel_text {
+  width: 250px;
+}
+.motopark_panel_text p {
+  font-size: 18px;
+}
+.motopark_panel_text h3 {
+  font-size: 32px;
+  padding-bottom: 10px;
+}
+.motopark_panel_text h4 {
+  font-size: 24px;
+  padding-bottom: 10px;
+}
+
+.motopark_buttons {
+  height: 100%;
+  display: flex;
+  margin-right: 30px;
+  align-items: flex-end;
+}
+.motopark_buttons :last-child {
+  margin-right: 0;
+}
+
+.motopark_panel_button {
+  height: 60px;
+  width: 220px;
+  font-family: "PT Sans", sans-serif;
+  font-size: 20px;
+  margin-right: 20px;
+  margin-bottom: 30px;
+  @include Button_hover;
+}
+/*RentForm*/
+.RentForm {
+  background: url(../Img/Background_all.jpg) no-repeat center;
+  background-size: cover;
+}
+.RentForm-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.Form {
+  margin-top: 100px;
+}
+
+.RentForm_input {
+  background-color: $main_color4;
+  height: 45px;
+  width: 500px;
+  margin-top: 18px;
+  text-align: center;
+  border: none;
+}
+/* Устанавливаем исчезающий текст в центре */
+::-webkit-input-placeholder {
+  text-align: center;
+}
+
+:-moz-placeholder {
+  /* Firefox 18- */
+  text-align: center;
+}
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  text-align: center;
+}
+
+:-ms-input-placeholder {
+  text-align: center;
+}
+.RentForm_button {
+  height: 45px;
+  width: 500px;
+  font-size: 24px;
+  border-radius: 30px;
+  margin-top: 18px;
+  @include Button_hover;
+}
+// Terms
+.Terms {
+  background: url(../Img/Background_all.jpg) no-repeat center;
+  background-size: cover;
+}
+.Terms-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.Terms_panel {
+  display: flex;
+  height: 270px;
+  color: $main_color2;
+  background-color: $main_color4;
+  border-radius: 30px;
+  margin-top: 40px;
+  align-items: center;
+}
+.Terms_text {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  margin-left: 10px;
+}
+.Terms_img img {
+  height: 245px;
+  width: 445px;
+  border-radius: 30px;
+  margin-right: 10px;
+}
+.Terms_button {
+  height: 45px;
+  width: 500px;
+  font-size: 24px;
+  border-radius: 30px;
+  margin-top: 90px;
+  @include Button_hover;
+}
+// Photos
+
+// Certificate
+.Certificate {
+  background: url(../Img/Background_all.jpg) no-repeat center;
+  background-size: cover;
+}
+.card img {
+  height: 400px;
+  width: 500px;
+}
+.Certificate-inner {
+  display: flex;
+  margin-top: 140px;
+}
+.Certificate_Form {
+  display: flex;
+  flex-direction: column;
+  margin-left: 65px;
+  height: 400px;
+}
+.Certificate_text {
+  font-size: 18px;
+  width: 500px;
+}
+.CertificateForm_input {
+  background-color: $main_color4;
+  height: 45px;
+  width: 500px;
+  margin-top: 20px;
+  text-align: center;
+  border: none;
+}
+.CertificateForm_button {
+  height: 45px;
+  width: 500px;
+  font-size: 24px;
+  border-radius: 30px;
+  margin-top: 20px;
+  @include Button_hover;
+}
+// FAQ
+.FAQ {
+  background: url(../Img/Background_all.jpg) no-repeat center;
+  background-size: cover;
+}
+.FAQ-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.FAQ-block {
+  width: 500px;
+}
+details {
+  padding-bottom: 10px;
+  border-radius: 7px;
+  margin-top: 20px;
+  font-size: 28px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+details summary {
+  outline: none;
+}
+.FAQ-block_text {
+  padding-top: 20px;
+}
+
+// Contacts
+.Contacts {
+  background: url(../Img/Background_all.jpg) no-repeat center;
+  background-size: cover;
+}
+.Contacts-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.Contacts_panel {
+  display: flex;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+.Contacts_text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 600px;
+}
+.Contacts_text p {
+  margin-top: 15px;
+}
+#Contacts_text_smaller_p {
+  font-size: 18px;
+  margin-top: 10px;
+}
+.Contacts_text h4 {
+  color: $main_color1;
+  font-weight: normal;
+  margin-top: 20px;
+}
+.Contacts_socials {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  letter-spacing: 14px;
+}
+.Contacts_socials_item {
+  color: $main_color1;
+}
+
+.map {
+  height: 410px;
+  width: 740px;
+  border-radius: 30px;
+  border: solid 1px $main_color1;
+}
+
+/* footer */
+.footer {
+  padding: 40px 0;
+  background: $main_color3;
+}
+.footer-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer ul {
+  list-style: none;
+}
+.footer li {
+  margin-bottom: 10px;
+}
+.footer a {
+  text-decoration: none;
+  color: $main_color2;
+  font-weight: normal;
+  font-size: 18px;
+  font-style: normal;
+}
+.footer-copy {
+  padding: 30px 0 0 0;
+}
+.footer-copy a {
+  color: $main_color2;
+  font-size: 14px;
+}
+.footer-copy a:last-child {
+  padding-left: 10px;
+}
