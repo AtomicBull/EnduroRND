@@ -35,12 +35,19 @@ a {
 /*header*/
 header {
   background-color: rgba(0, 0, 0, 0.6);
+  background: url(../Img/Background_image.jpg) no-repeat center;
+  background-size: cover;
 }
 
 .nav-inner {
   display: flex;
   height: 90px;
   align-items: center;
+}
+
+.nav-top {
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
 }
 
 .menu {
@@ -71,8 +78,8 @@ header {
 
 /*promo*/
 .promo {
-  background: url(../Img/promo_background.jpg) no-repeat center;
-  background-size: cover;
+  background: none;
+  padding-top: 100px;
 }
 
 .promo-inner {

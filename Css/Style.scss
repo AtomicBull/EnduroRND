@@ -50,11 +50,19 @@ a {
 /*header*/
 header {
   background-color: #00000099;
+  background: url(../Img/Background_image.jpg) no-repeat center;
+  background-size: cover;
 }
 .nav-inner {
   display: flex;
   height: 90px;
   align-items: center;
+}
+.nav-top {
+  background-color: rgba(0, 0, 0, 0.6);
+  // position: fixed;
+  // Если хотим сделать header всегда вверху то убрать коммент
+  width: 100%;
 }
 .menu {
   width: 100%;
@@ -79,8 +87,8 @@ header {
 }
 /*promo*/
 .promo {
-  background: url(../Img/promo_background.jpg) no-repeat center;
-  background-size: cover;
+  background: none;
+  padding-top: 100px;
 }
 .promo-inner {
   min-height: calc(100vh - 74px);
