@@ -17,6 +17,12 @@ $main_color4: #464440;
     transition: 0.5s;
   }
 }
+@mixin Main_hover {
+  &:hover {
+    color: $main_color1;
+    transition: 0.5s;
+  }
+}
 
 /* Задаём общие свойства для всего документа*/
 * {
@@ -31,6 +37,7 @@ body {
 a {
   text-decoration: none;
   color: $main_color2;
+  @include Main_hover;
 }
 // container для определения ширины контента
 .container {
@@ -77,6 +84,7 @@ header {
 .menu-item li {
   margin-left: 30px;
 }
+
 .socials {
   display: flex;
   list-style: none;
