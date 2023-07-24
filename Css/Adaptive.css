@@ -1,0 +1,204 @@
+/* Reviews */
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+  .promo_panel {
+    width: 100%;
+  }
+  .Certificate-inner {
+    flex-direction: column;
+    margin-top: 8.75rem;
+  }
+  .Contacts_panel {
+    flex-direction: column;
+  }
+  .map {
+    width: 100%;
+    margin-top: 1.875rem;
+  }
+  .promo_button {
+    width: 100%;
+  }
+  .services-inner {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .services_img {
+    width: 100%;
+    height: 32.4375rem;
+  }
+  .services_panel {
+    margin-right: 0px;
+    width: 100%;
+  }
+  .motopark-inner {
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+  }
+  .motopark_card {
+    margin-right: 0px;
+    width: 50%;
+  }
+  .Form {
+    width: 100%;
+  }
+  .RentForm_input {
+    width: 100%;
+  }
+  .RentForm_button {
+    width: 100%;
+  }
+  .Certificate-inner {
+    flex-direction: column;
+    align-items: center;
+  }
+  .Certificate_Form {
+    margin-left: 0;
+    height: 100%;
+  }
+  .CertificateForm_input {
+    width: 100%;
+  }
+  .CertificateForm_button {
+    width: 100%;
+  }
+  .Certificate_text {
+    margin-top: 1.875rem;
+    width: 100%;
+  }
+  .card img {
+    width: 100%;
+  }
+  .Contacts_panel {
+    flex-direction: column;
+    align-items: center;
+  }
+  .FAQ-block {
+    width: 100%;
+  }
+  .menu {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    overflow-y: auto;
+    padding: 3.125rem 2.5rem;
+    background-color: black;
+    animation: burgerAnimation 0.4s;
+  }
+  .menu .menu-item {
+    display: flex;
+    list-style: none;
+    margin-right: 0px;
+  }
+  .menu .menu-item li {
+    margin-left: 0px;
+  }
+  .menu .socials li:first-child {
+    margin-left: 0px;
+  }
+  @keyframes burgerAnimation {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  .burger {
+    display: flex;
+  }
+  .menu-item {
+    flex-direction: column;
+  }
+  .btn-up {
+    width: 2.5rem;
+    height: 1.875rem;
+  }
+  .btn-up::before {
+    width: 1.5625rem;
+    height: 1.5625rem;
+  }
+}
+@media (max-width: 360px) {
+  .container {
+    width: 100%;
+  }
+  body {
+    font: 1rem "Roboto Condensed", sans-serif;
+  }
+  .container {
+    width: 21.25rem;
+  }
+  .logo img {
+    width: 6.25rem;
+  }
+  .titles {
+    padding-bottom: 0.625rem;
+  }
+  .titles h1 {
+    font-size: 1.5rem;
+  }
+  .titles h2 {
+    font-size: 1.125rem;
+  }
+  .promo_panel {
+    width: 100%;
+  }
+  .promo_panel_item p {
+    font-size: 1.125rem;
+  }
+  .promo_button {
+    font-size: 1.125rem;
+  }
+  .services_title {
+    font-size: 1.25rem;
+  }
+  .services_description {
+    font-size: 1.25rem;
+  }
+  .Form {
+    margin-top: 3.125rem;
+    width: 100%;
+  }
+  .Certificate_text {
+    font-size: 1rem;
+  }
+  .CertificateForm_button {
+    font-size: 1rem;
+  }
+  .Yandex-reviews {
+    width: 15.875rem;
+  }
+  .map {
+    width: 15rem;
+    height: 18.75rem;
+  }
+  .promo_button {
+    margin-bottom: 3.125rem;
+  }
+  /* footer */
+  .footer a {
+    font-size: 0.875rem;
+  }
+  .footer-privacy a {
+    font-size: 0.75rem;
+  }
+  .btn-up {
+    width: 1.875rem;
+    height: 1.5625rem;
+  }
+  .btn-up::before {
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+}/*# sourceMappingURL=Adaptive.css.map */
